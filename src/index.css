@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main{
+    min-height: 450px;
+}
+
+.login{
+    width: 100%;
+    margin: 0 auto 0 0;
+}
+
+.relogio{
+    /* width: 200px; */
+    /* height: 200px; */
+    /* background-color: red; */
+    /* animation-name: relogio; */
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    /* border-radius: 100px; */
+}
+
+@keyframes relogio{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+     transform: rotate(360deg);
+    }
+}
+
+
+footer.page-footer{
+    padding-top: 20px;
+    background-color: dimgrey;
+}
+
+footer.page-footer .footer-copyright{
+    overflow: hidden;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(51,51, 51, 0.8);
+}
+
+.panel-titulo{
+    font-weight: bolder;
+}
