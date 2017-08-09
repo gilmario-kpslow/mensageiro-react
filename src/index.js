@@ -11,6 +11,7 @@ import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import {mensagem} from './reducers/mensagemReducer';
 import {Provider} from 'react-redux';
+import WebSocket from './components/TesteWebSocket';
 
 //import registerServiceWorker from './registerServiceWorker';
 
@@ -23,6 +24,7 @@ ReactDOM.render(
         <BrowserRouter>
             <App>
                 <Route path="/login" component={Login}/>
+                <Route path="/teste" component={WebSocket}/>
                 <Route path="/conversa" component={Conversa}/>
             </App>
         </BrowserRouter>

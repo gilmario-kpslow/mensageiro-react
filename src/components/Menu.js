@@ -22,6 +22,11 @@ export default class Menu extends Component {
                                 <span className="fa fa-user"></span> Login
                             </NavItem>
                         </LinkContainer>
+                        <LinkContainer to="/teste">
+                            <NavItem eventKey={2}>
+                                <span className="fa fa-check"></span> TEste
+                            </NavItem>
+                        </LinkContainer>
                         <LinkContainer to="/conversa">
                             <NavItem eventKey={2}>
                                 <span className="fa fa-chat"></span> Conversa

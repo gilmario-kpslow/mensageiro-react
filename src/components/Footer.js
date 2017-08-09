@@ -12,7 +12,7 @@ export default class Footer extends Component {
                     <div className="container">
                         <Row>
                             <Col md={4} xs={6}>
-                                <span>teste</span>
+                                <span></span>
                             </Col>
                             <Col md={4} xs={6}>
                                 <span>teste@informatica.com.br</span>
