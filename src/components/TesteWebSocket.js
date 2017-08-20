@@ -19,7 +19,7 @@ export default class TesteWebSocket extends Component {
                 TESTE
                 <br/>
                 <Button onClick={this.enviar.bind(this)}>OK</Button>
-           </div>   
+           </div>
         );
     }
 }

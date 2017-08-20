@@ -12,6 +12,7 @@ import thunkMiddleware from 'redux-thunk';
 import {mensagem} from './reducers/mensagemReducer';
 import {Provider} from 'react-redux';
 import WebSocket from './components/TesteWebSocket';
+import Notificacao from './components/Notificacao';
 
 //import registerServiceWorker from './registerServiceWorker';
 
@@ -26,6 +27,7 @@ ReactDOM.render(
                 <Route path="/login" component={Login}/>
                 <Route path="/teste" component={WebSocket}/>
                 <Route path="/conversa" component={Conversa}/>
+                <Route path="/notificar" component={Notificacao}/>
             </App>
         </BrowserRouter>
     </Provider>

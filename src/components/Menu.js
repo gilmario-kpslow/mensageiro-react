@@ -26,6 +26,13 @@ export default class Menu extends Component {
                             <NavItem eventKey={2}>
                                 <span className="fa fa-check"></span> TEste
                             </NavItem>
+                            
+                        </LinkContainer>
+                        <LinkContainer to="/notificar">
+                            <NavItem eventKey={3}>
+                                <span className="fa fa-check"></span> Notificar
+                            </NavItem>
+                            
                         </LinkContainer>
                         <LinkContainer to="/conversa">
                             <NavItem eventKey={2}>
