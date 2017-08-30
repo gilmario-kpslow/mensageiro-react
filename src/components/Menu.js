@@ -17,16 +17,10 @@ export default class Menu extends Component {
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <LinkContainer to="/login">
-                            <NavItem eventKey={2}>
-                                <span className="fa fa-user"></span> Login
-                            </NavItem>
-                        </LinkContainer>
                         <LinkContainer to="/teste">
                             <NavItem eventKey={2}>
                                 <span className="fa fa-check"></span> TEste
                             </NavItem>
-                            
                         </LinkContainer>
                         <LinkContainer to="/notificar">
                             <NavItem eventKey={3}>

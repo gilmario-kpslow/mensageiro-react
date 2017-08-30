@@ -4,20 +4,23 @@ import './index.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App';
-import {Route, BrowserRouter} from 'react-router-dom'
+import {Route, BrowserRouter, Redirect} from 'react-router-dom'
 import Login from './components/Login';
 import Conversa from './components/Conversa';
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import {mensagem} from './reducers/mensagemReducer';
 import {Provider} from 'react-redux';
-import WebSocket from './components/TesteWebSocket';
 import Notificacao from './components/Notificacao';
+import LoginManager from './logicas/LoginManager';
 
 //import registerServiceWorker from './registerServiceWorker';
 
 const reducers = combineReducers({mensagem});
 const store = createStore(reducers, applyMiddleware(thunkMiddleware));
+let usuario;
+
+
 
 
 ReactDOM.render(
@@ -25,7 +28,7 @@ ReactDOM.render(
         <BrowserRouter>
             <App>
                 <Route path="/login" component={Login}/>
-                <Route path="/teste" component={WebSocket}/>
+                <Route path="/" component={LoginManager.isLogado(usuario, Conversa, Login )} />
                 <Route path="/conversa" component={Conversa}/>
                 <Route path="/notificar" component={Notificacao}/>
             </App>

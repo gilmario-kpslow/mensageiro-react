@@ -3,7 +3,18 @@ import {Button, Panel, ControlLabel, FormControl, FormGroup, Col, Row} from 'rea
 import PanelHeader from "./PanelHeader"
 import PanelFooter from "./PanelFooter"
 
+
 export default class Login extends Component {
+
+    constructor(props){
+        super(props)
+        this.state = {}
+    }
+
+    onLogin(event){
+        event.preventDefault();
+        
+    }
 
     render() {
         return (
@@ -14,7 +25,7 @@ export default class Login extends Component {
                             <PanelFooter>
                                 <Row>
                                     <Col md={6} xs={6}>
-                                        <Button block bsStyle="success"><span className="fa fa-check"></span> OK</Button>
+                                        <Button block bsStyle="success" onClick={this.onLogin.bind(this)}><span className="fa fa-check" ></span> OK</Button>
                                     </Col>
                                 </Row>
                             </PanelFooter>

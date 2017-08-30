@@ -1,10 +1,21 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Relogio from './components/Relogio';
 
-
 class App extends Component {
+
+    constructor(){
+        super()
+        this.state = {}
+    }
+
+    componentDidMount(){
+        
+        
+    }
+
     render() {
         return (
             <div>
@@ -18,9 +29,5 @@ class App extends Component {
         );
     }
 };
-
-App.contextTypes = {
-  store : React.PropTypes.object.isRequired
-}
 
 export default App;
