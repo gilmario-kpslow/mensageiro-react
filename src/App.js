@@ -19,8 +19,6 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Header/>
-                <Relogio/>
                 <div className="main">
                     {this.props.children}
                 </div>

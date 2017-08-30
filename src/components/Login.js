@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect, Router,history } from 'react-router';
 import {Button, Panel, ControlLabel, FormControl, FormGroup, Col, Row} from 'react-bootstrap'
 import PanelHeader from "./PanelHeader"
 import PanelFooter from "./PanelFooter"
@@ -13,6 +14,10 @@ export default class Login extends Component {
 
     onLogin(event){
         event.preventDefault();
+        console.log('Login')
+        history.push('conversa')
+        
+        
         
     }
 
